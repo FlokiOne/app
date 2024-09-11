@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-app-pod
+  labels:
+    app: my-crud-app
+spec:
+  containers:
+    - name: my-crud-container
+      image: flokione/k8s-crud-app:latest
+      ports:
+        - containerPort: 8080
